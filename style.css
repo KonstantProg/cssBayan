@@ -44,15 +44,16 @@ label {
 input:hover + label + .bayan {
 	display: block;
 }
-
+img:hover + .bayan {
+	width: 100%;
+}
 input:checked + label .icon {
 	transition: transform .3s;
 	transform: rotate(180deg);
 }
 
 input:checked + label + .bayan {
-	display: block;
-	width: 100%;
+display: block;
 }
 
 input:checked + label {
@@ -85,8 +86,7 @@ input:checked + label {
 
 .bayan {
 	display: none;
-	width: 0;
-	transition: .5s ease;
+	transition: width .5s ease;
 	text-align: center;
 	padding: 10px 20px;
 }
@@ -133,5 +133,15 @@ label {
 	}
 	label {
 		font-size: 27px;
+	}
+	.bayan {
+		display: block;
+		width: 0;
+		transition: width .5s ease;
+		text-align: center;
+		padding: 10px 20px;
+	}
+	input:checked + label + .bayan {
+		width: 100%;
 	}
 }
