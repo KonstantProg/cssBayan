@@ -1,0 +1,138 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #cddb73;
+}
+
+main {
+	display: block;
+	margin: 25px 200px;
+}
+
+main p {
+	font-size: 54px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	color: #303023;
+}
+
+input {
+	display: none;
+}
+
+img {
+	width: 60%;
+}
+
+label {
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+	color: #5a5a3e;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 1.5;
+	padding: 10px 20px;
+	z-index: 100;
+	border-top: 1px solid #000;
+}
+
+input:hover + label + .bayan {
+	display: block;
+}
+
+input:checked + label .icon {
+	transition: transform .3s;
+	transform: rotate(180deg);
+}
+
+input:checked + label + .bayan {
+	display: block;
+}
+
+input:checked + label {
+	color: #303023;
+}
+
+.active {
+	display: block;
+}
+
+.container {
+	width: 95%;
+}
+
+.container:hover {
+	cursor: pointer;
+}
+
+.icon {
+	display: none;
+}
+
+.container:hover input + label .icon{
+	display: flex;
+}
+
+.container:hover input + label {
+	color: #303023;
+}
+
+.bayan {
+	display: none;
+	text-align: center;
+	padding: 10px 20px;
+}
+
+.bayan:hover {
+	display: block;
+}
+
+.image {
+	transition: .5s ease;
+}
+
+/* Responsive */
+@media screen and (max-width: 1920px) {
+
+	main {
+		margin: 25px 150px;
+	}
+
+}
+
+@media screen and (max-width: 1180px) {
+
+	main {
+		margin: 25px 100px;
+	}
+	main p {
+		font-size: 45px;
+		font-weight: 700;
+	}
+label {
+	font-size: 32px;
+}
+
+}
+
+@media screen and (max-width: 568px) {
+
+	main {
+		margin: 25px 50px;
+	}
+	main p {
+		font-size: 36px;
+		font-weight: 700;
+	}
+	img {
+		width: 100%;
+	}
+	label {
+		font-size: 27px;
+	}
+}
