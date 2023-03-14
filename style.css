@@ -52,6 +52,7 @@ input:checked + label .icon {
 
 input:checked + label + .bayan {
 	display: block;
+	width: 100%;
 }
 
 input:checked + label {
@@ -84,16 +85,14 @@ input:checked + label {
 
 .bayan {
 	display: none;
+	width: 0;
+	transition: .5s ease;
 	text-align: center;
 	padding: 10px 20px;
 }
 
 .bayan:hover {
 	display: block;
-}
-
-.image {
-	transition: .5s ease;
 }
 
 /* Responsive */
